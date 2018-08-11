@@ -85,3 +85,13 @@ img {
   }
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+ #knop{
+   max-width:5%;
+ }
+
+ #knop:hover{
+  transition-timing-function: ease;
+  max-width:8%;
+}
