@@ -9,10 +9,79 @@ body {
     color: #333;
     line-height: 1.5em;
     padding: 25px;
+    max-width:90%;
+    margin:auto;
+    -webkit-box-shadow:0px 5px 10px #333;
+    -moz-box-shadow:0px 5px 10px #333;
+    box-shadow:0px 5px 10px #333;
 }
 
 img {
     max-width: 100%; /* Afbeeldingen responsive maken */
 }
 
-/* Voeg jouw css hieraan toe */
+.navbar {
+    overflow: hidden;
+    background-color:hsla(261, 63%, 60%, 1);
+    font-family: montserrat;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-weight:bold;
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(133, 88, 217, 0.507);
+    min-width: 160px;
+    box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
